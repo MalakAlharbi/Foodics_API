@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FOODICS API Project">
+    <test  name="Foodics_API">
+        <classes>
+            <class name="testcases.TC01_Login">
+                <methods>
+                    <include name="loginWithValidEmailPassword_P"/>
+                    <include name="loginWithInvalidEmailValidPassword_N"/>
+                    <include name="loginWithValidEmailPasswordInvalidToken_N"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
